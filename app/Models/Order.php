@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class Orders extends Model
+class Order extends Model
 {
     use HasFactory;
 
@@ -31,6 +31,6 @@ class Orders extends Model
 
     public function orderDetails(): HasMany
     {
-        return $this->hasMany(OrderDetails::class);
+        return $this->hasMany(OrderDetail::class);
     }
 }

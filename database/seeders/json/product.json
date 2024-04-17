@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Nến thơm Lavender",
+        "price": 50000,
+        "description": "Nến thơm Lavender giúp tạo không gian thư giãn và dễ chịu.",
+        "sale": 0.1,
+        "images": null
+    },
+    {
+        "name": "Nến thơm Vanilla",
+        "price": 60000,
+        "description": "Nến thơm Vanilla mang lại hương thơm ngọt ngào và ấm áp.",
+        "sale": 0.15,
+        "images": null
+    },
+    {
+        "name": "Nến thơm Rose",
+        "price": 55000,
+        "description": "Nến thơm Rose với hương thơm dịu dàng và quyến rũ.",
+        "sale": 0.05,
+        "images": null
+    },
+    {
+        "name": "Nến thơm Jasmine",
+        "price": 58000,
+        "description": "Nến thơm Jasmine mang lại hương thơm nồng nàn và quyến rũ.",
+        "sale": 0.1,
+        "images": null
+    },
+    {
+        "name": "Nến thơm Sandalwood",
+        "price": 65000,
+        "description": "Nến thơm Sandalwood với hương thơm trầm mặc và tinh tế.",
+        "sale": 0.2,
+        "images": null
+    },
+    {
+        "name": "Nến thơm Eucalyptus",
+        "price": 52000,
+        "description": "Nến thơm Eucalyptus giúp tạo không gian sảng khoái và sức khỏe.",
+        "sale": 0.1,
+        "images": null
+    },
+    {
+        "name": "Nến thơm Lemongrass",
+        "price": 54000,
+        "description": "Nến thơm Lemongrass mang lại hương thơm sảng khoái và tươi mới.",
+        "sale": 0.05,
+        "images": null
+    },
+    {
+        "name": "Nến thơm Peppermint",
+        "price": 56000,
+        "description": "Nến thơm Peppermint giúp tạo cảm giác sảng khoái và kích thích.",
+        "sale": 0.1,
+        "images": null
+    },
+    {
+        "name": "Nến thơm Citrus",
+        "price": 59000,
+        "description": "Nến thơm Citrus mang lại hương thơm tươi mới và sảng khoái.",
+        "sale": 0.15,
+        "images": null
+    },
+    {
+        "name": "Nến thơm Cinnamon",
+        "price": 62000,
+        "description": "Nến thơm Cinnamon với hương thơm ấm áp và gợi cảm.",
+        "sale": 0.2,
+        "images": null
+    }
+]

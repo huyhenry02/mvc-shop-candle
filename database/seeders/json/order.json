@@ -1,0 +1,27 @@
+[
+    {
+        "code": "ORDER001",
+        "user_id": 1,
+        "total": 150000
+    },
+    {
+        "code": "ORDER002",
+        "user_id": 2,
+        "total": 250000
+    },
+    {
+        "code": "ORDER003",
+        "user_id": 1,
+        "total": 180000
+    },
+    {
+        "code": "ORDER004",
+        "user_id": 3,
+        "total": 300000
+    },
+    {
+        "code": "ORDER005",
+        "user_id": 2,
+        "total": 210000
+    }
+]
