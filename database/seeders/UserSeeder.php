@@ -24,6 +24,7 @@ class UserSeeder extends Seeder
                 'email' => $item->email,
                 'password' => bcrypt($item->password),
                 'age' => $item->age,
+                'role' => $item->role,
             ]);
         }
     }
