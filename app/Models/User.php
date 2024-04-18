@@ -12,6 +12,17 @@ class User extends Authenticatable
 {
     use HasFactory, Notifiable;
 
+    public const ROLE_ADMIN = "admin";
+    public const  ROLE_USER = "user";
+    public const  ARRAY_ROLE = [
+        self::ROLE_ADMIN => "Quản trị viên",
+        self::ROLE_USER => "Người dùng"
+    ];
+    /**
+     * The table associated with the model.
+     *
+     * @var string
+     */
     protected $table = 'users';
 
     /**
@@ -26,6 +37,7 @@ class User extends Authenticatable
         'email',
         'password',
         'age',
+        'role'
     ];
 
     /**

@@ -9,7 +9,7 @@
         <!-- Sidebar navigation-->
         <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
             <ul id="sidebarnav">
-                <li class="sidebar-item item-custom active">
+                <li class="sidebar-item item-custom {{ Request::routeIs('admin.product.index') ? 'active' : '' }}">
                     <a class="" href="{{route('admin.product.index')}}" aria-expanded="false">
                 <span>
                   <i class="ti ti-cards"></i>
@@ -17,8 +17,8 @@
                         <span class="hide-menu">Sản phẩm</span>
                     </a>
                 </li>
-                <li class="sidebar-item item-custom">
-                    <a class="" href="" aria-expanded="false">
+                <li class="sidebar-item item-custom {{ Request::routeIs('admin.user.index') ? 'active' : '' }}">
+                    <a class="" href="{{route('admin.user.index')}}" aria-expanded="false">
                 <span>
                   <i class="ti ti-cards"></i>
 
@@ -26,16 +26,7 @@
                         <span class="hide-menu">Người dùng</span>
                     </a>
                 </li>
-                <li class="sidebar-item item-custom">
-                    <a class="" href="" aria-expanded="false">
-                <span>
-                  <i class="ti ti-cards"></i>
-
-                </span>
-                        <span class="hide-menu">Nhân viên</span>
-                    </a>
-                </li>
-                <li class="sidebar-item item-custom">
+                <li class="sidebar-item item-custom {{ Request::routeIs('admin.order.index') ? 'active' : '' }}">
                     <a class="" href="" aria-expanded="false">
                 <span>
                   <i class="ti ti-cards"></i>
