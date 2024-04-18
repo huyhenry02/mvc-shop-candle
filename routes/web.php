@@ -12,6 +12,7 @@ Route::get('/', function () {
 
 Route::group([
     'prefix' => 'admin',
+    'middleware' => 'auth'
 ], function () {
 
     Route::group([
@@ -39,7 +40,8 @@ Route::group([
     });
 
     Route::group([
-        'prefix' => 'order'
+        'prefix' => 'order',
+
     ], function () {
         Route::get('/', [OrderController::class, 'index'])->name('admin.order.index');
         Route::get('/create', [OrderController::class, 'create'])->name('admin.order.create');
@@ -52,16 +54,16 @@ Route::group([
 });
 
 Route::group([
+    'prefix' => 'auth'
+], function () {
+    Route::get('/login', [AuthController::class, 'login'])->name('login.index');
+    Route::post('/login', [AuthController::class, 'postLogin'])->name('login.post');
+    Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+});
+
+Route::group([
     'prefix' => 'user',
 ], function () {
-    Route::group([
-        'prefix' => 'auth'
-    ], function () {
-        Route::get('/login', [AuthController::class, 'login'])->name('login.index');
-        Route::post('/login', [AuthController::class, 'postLogin'])->name('login.post');
-        Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
-    });
-
     Route::group([
         'prefix' => 'index'
     ], function () {
