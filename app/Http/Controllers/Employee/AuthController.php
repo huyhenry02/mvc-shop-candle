@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Employee;
 
 use App\Http\Controllers\Controller;
+use App\Models\User;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Foundation\Application;
@@ -16,6 +17,22 @@ class AuthController extends Controller
         return view('auth.login');
     }
 
+    public function register(): Factory|Application|View|\Illuminate\Contracts\Foundation\Application
+    {
+        return view('auth.register');
+
+    }
+
+    public function postRegister(Request $request): RedirectResponse
+    {
+        $input = $request->all();
+        $input['password'] = bcrypt($input['password']);
+        $input['role'] = User::ROLE_USER;
+        User::create($input);
+        return redirect()->route('login.index');
+
+    }
+
     public function postLogin(Request $request): RedirectResponse
     {
         $request->validate([
@@ -25,7 +42,11 @@ class AuthController extends Controller
 
         $credentials = $request->only('email', 'password');
         if (auth()->attempt($credentials)) {
-            return redirect()->route('admin.product.index');
+            if (auth()->user()->role === 'admin') {
+                return redirect()->route('admin.product.index');
+            }
+            return redirect()->route('user.shop.index');
+
         }
 
         return redirect()->back()->with('error', 'Invalid credentials');

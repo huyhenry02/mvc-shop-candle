@@ -10,20 +10,20 @@
                             <div class="collapse navbar-collapse" id="footerNavContent">
                                 <ul class="navbar-nav ml-auto">
                                     <li class="nav-item active">
-                                        <a class="nav-link" href="#">Home</a>
+                                        <a class="nav-link" href="#">Trang chủ</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Shop</a>
+                                        <a class="nav-link" href="#">Sản phẩm</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Product</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Cart</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Checkout</a>
-                                    </li>
+                                    @if(auth()->user())
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{{route('logout')}}">Đăng xuất</a>
+                                        </li>
+                                    @else
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{{route('login.index')}}">Đăng nhập</a>
+                                        </li>
+                                    @endif
                                 </ul>
                             </div>
                         </nav>

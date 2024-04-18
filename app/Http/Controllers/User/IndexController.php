@@ -2,7 +2,12 @@
 
 namespace App\Http\Controllers\User;
 
-abstract class IndexController
+use App\Http\Controllers\Controller;
+
+class IndexController extends Controller
 {
-    //
+    public function index(): string
+    {
+        return view('user.layouts.index');
+    }
 }

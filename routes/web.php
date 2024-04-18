@@ -4,6 +4,9 @@ use App\Http\Controllers\Employee\AuthController;
 use App\Http\Controllers\Employee\OrderController;
 use App\Http\Controllers\Employee\ProductController;
 use App\Http\Controllers\Employee\UserController;
+use App\Http\Controllers\User\CheckoutController;
+use App\Http\Controllers\User\IndexController;
+use App\Http\Controllers\User\ShopController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -57,7 +60,9 @@ Route::group([
     'prefix' => 'auth'
 ], function () {
     Route::get('/login', [AuthController::class, 'login'])->name('login.index');
+    Route::get('/register', [AuthController::class, 'register'])->name('register.index');
     Route::post('/login', [AuthController::class, 'postLogin'])->name('login.post');
+    Route::post('/register', [AuthController::class, 'postRegister'])->name('register.post');
     Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 });
 
@@ -67,24 +72,31 @@ Route::group([
     Route::group([
         'prefix' => 'index'
     ], function () {
-
+        Route::get('/', [IndexController::class, 'index'])->name('user.index');
     });
 
     Route::group([
-        'prefix' => 'cart'
+        'prefix' => 'cart',
+        'middleware' => 'auth'
     ], function () {
-
+        Route::get('/add/{product_id?}/{quantity?}', [ShopController::class, 'addToCart'])->name('user.cart.add');
+        Route::get('/index', [CheckoutController::class, 'indexCart'])->name('user.cart.index');
     });
 
     Route::group([
         'prefix' => 'shop'
     ], function () {
+        Route::get('/index', [ShopController::class, 'index'])->name('user.shop.index');
 
     });
 
     Route::group([
         'prefix' => 'checkout'
     ], function () {
+        Route::get('/index/{order_id?}', [CheckoutController::class, 'indexCheckout'])->name('user.order.checkout');
+        Route::get('/confirmation', [CheckoutController::class, 'indexConfirmation'])->name('user.order.confirmation');
+        Route::post('/create', [CheckoutController::class, 'createOrder'])->name('user.order.create');
+        Route::post('/approved-order/{orderId}', [CheckoutController::class, 'approvedOrder'])->name('user.approvedOrder');
 
     });
 });

@@ -7,12 +7,12 @@
             <!-- Single Catagory -->
             <div class="single-products-catagory clearfix">
                 <a href="#">
-                    <img src="/employee/img/bg-img/1.jpg" alt="">
+                    <img src="/employee/img/bg-img/candle5.jpg" alt="">
                     <!-- Hover Content -->
                     <div class="hover-content">
                         <div class="line"></div>
                         <p>From $180</p>
-                        <h4>Modern Chair</h4>
+                        <h4></h4>
                     </div>
                 </a>
             </div>
@@ -20,7 +20,7 @@
             <!-- Single Catagory -->
             <div class="single-products-catagory clearfix">
                 <a href="#">
-                    <img src="/employee/img/bg-img/2.jpg" alt="">
+                    <img src="/employee/img/bg-img/candle1.jpg" alt="">
                     <!-- Hover Content -->
                     <div class="hover-content">
                         <div class="line"></div>
@@ -33,7 +33,7 @@
             <!-- Single Catagory -->
             <div class="single-products-catagory clearfix">
                 <a href="#">
-                    <img src="/employee/img/bg-img/3.jpg" alt="">
+                    <img src="/employee/img/bg-img/candle3.jpg" alt="">
                     <!-- Hover Content -->
                     <div class="hover-content">
                         <div class="line"></div>
@@ -46,7 +46,7 @@
             <!-- Single Catagory -->
             <div class="single-products-catagory clearfix">
                 <a href="#">
-                    <img src="/employee/img/bg-img/4.jpg" alt="">
+                    <img src="/employee/img/bg-img/candle4.jpg" alt="">
                     <!-- Hover Content -->
                     <div class="hover-content">
                         <div class="line"></div>
@@ -59,7 +59,7 @@
             <!-- Single Catagory -->
             <div class="single-products-catagory clearfix">
                 <a href="#">
-                    <img src="/employee/img/bg-img/5.jpg" alt="">
+                    <img src="/employee/img/bg-img/candle2.jpg" alt="">
                     <!-- Hover Content -->
                     <div class="hover-content">
                         <div class="line"></div>
@@ -72,7 +72,7 @@
             <!-- Single Catagory -->
             <div class="single-products-catagory clearfix">
                 <a href="#">
-                    <img src="/employee/img/bg-img/6.jpg" alt="">
+                    <img src="/employee/img/bg-img/candle6.jpg" alt="">
                     <!-- Hover Content -->
                     <div class="hover-content">
                         <div class="line"></div>
@@ -85,7 +85,7 @@
             <!-- Single Catagory -->
             <div class="single-products-catagory clearfix">
                 <a href="#">
-                    <img src="/employee/img/bg-img/7.jpg" alt="">
+                    <img src="/employee/img/bg-img/candle7.jpg" alt="">
                     <!-- Hover Content -->
                     <div class="hover-content">
                         <div class="line"></div>
@@ -98,7 +98,7 @@
             <!-- Single Catagory -->
             <div class="single-products-catagory clearfix">
                 <a href="#">
-                    <img src="/employee/img/bg-img/8.jpg" alt="">
+                    <img src="/employee/img/bg-img/candle8.jpeg" alt="">
                     <!-- Hover Content -->
                     <div class="hover-content">
                         <div class="line"></div>
@@ -111,7 +111,7 @@
             <!-- Single Catagory -->
             <div class="single-products-catagory clearfix">
                 <a href="#">
-                    <img src="/employee/img/bg-img/9.jpg" alt="">
+                    <img src="/employee/img/bg-img/candle9.png" alt="">
                     <!-- Hover Content -->
                     <div class="hover-content">
                         <div class="line"></div>
