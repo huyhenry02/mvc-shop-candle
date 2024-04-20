@@ -19,13 +19,13 @@
                                     <input type="text" name="shipping_address" class="form-control" id="company" placeholder="Địa chỉ nhận hàng" value="">
                                 </div>
                                 <div class="col-12 mb-3">
-                                    <input type="email" name="shipping_name" class="form-control" id="email" placeholder="Email người nhận" value="">
+                                    <input type="text" name="shipping_name" class="form-control" id="email" placeholder="Email người nhận" value="">
                                 </div>
                                 <div class="col-12 mb-3">
                                     <input type="text" name="shipping_phone" class="form-control" id="email" placeholder="SĐT người nhận" value="">
                                 </div>
                                 <div class="col-12 mb-3">
-                                    <textarea name="note" class="form-control w-100" id="comment" cols="30" rows="10" placeholder="Hãy để lại lời nhắn của bạn"></textarea>
+                                    <textarea name="shipping_note" class="form-control w-100" id="comment" cols="30" rows="10" placeholder="Hãy để lại lời nhắn của bạn"></textarea>
                                 </div>
                                 <div class="cart-btn" style="margin-left: 15px">
                                     <button type="submit" class="btn amado-btn w-100">Xác nhận</button>

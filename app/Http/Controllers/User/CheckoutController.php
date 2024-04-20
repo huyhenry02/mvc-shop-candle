@@ -74,7 +74,6 @@ class CheckoutController extends Controller
     {
         $order = Order::find($orderId);
         $order->fill($request->all());
-        $order->status = 'shipping';
         $order->save();
         return redirect()->route('user.order.confirmation')->with('success', 'Đơn hàng của bạn đã được tạo');
 

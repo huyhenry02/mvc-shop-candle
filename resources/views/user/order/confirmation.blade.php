@@ -1,3 +1,4 @@
+@php use App\Models\Order; @endphp
 @extends('user.layouts.main')
 @section('content')
     <div class="cart-table-area section-padding-100">
@@ -7,7 +8,7 @@
                     <div class="checkout_details_area mt-50 clearfix">
 
                         <div class="cart-title">
-                            <h5>Đơn hàng của bạn đã được xác nhận</h5>
+                            <h5>Đơn hàng của bạn ở trạng thái {{Order::STATUSES[$order->status]}}</h5>
                         </div>
                         <table class="table table-striped table-bordered">
                             <thead>
@@ -37,9 +38,11 @@
                     <div class="cart-summary">
                         <h5>Giá trị đơn hàng</h5>
                         <ul class="summary-table">
-                            <li><span>Tổng giá trị:</span> <span>{{number_format($order->total, 0, ',', '.')}} VNĐ</span></li>
+                            <li><span>Tổng giá trị:</span>
+                                <span>{{number_format($order->total, 0, ',', '.')}} VNĐ</span></li>
                             <li><span>Vận chuyển:</span> <span>Free</span></li>
-                            <li><span>Giá tiền:</span> <span>{{number_format($order->total, 0, ',', '.')}} VNĐ</span></li>
+                            <li><span>Giá tiền:</span> <span>{{number_format($order->total, 0, ',', '.')}} VNĐ</span>
+                            </li>
                         </ul>
                     </div>
                 </div>

@@ -47,8 +47,6 @@ Route::group([
 
     ], function () {
         Route::get('/', [OrderController::class, 'index'])->name('admin.order.index');
-        Route::get('/create', [OrderController::class, 'create'])->name('admin.order.create');
-        Route::post('/', [OrderController::class, 'store'])->name('admin.order.store');
         Route::get('/{order}', [OrderController::class, 'show'])->name('admin.order.show');
         Route::get('/edit/{order}', [OrderController::class, 'edit'])->name('admin.order.edit');
         Route::post('/update/{order}', [OrderController::class, 'update'])->name('admin.order.update');

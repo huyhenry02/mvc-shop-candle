@@ -13,6 +13,18 @@ class Order extends Model
 
     protected $table = 'orders';
 
+    public const STATUS_PENDING = 'pending';
+    public const STATUS_APPROVED = 'approved';
+    public const STATUS_SHIPPING = 'shipping';
+    public const STATUS_COMPLETED = 'completed';
+
+    public const STATUSES = [
+        self::STATUS_PENDING => 'Chờ duyệt',
+        self::STATUS_APPROVED => 'Đã xác nhận',
+        self::STATUS_SHIPPING => 'Đang giao hàng',
+        self::STATUS_COMPLETED => 'Đã giao hàng',
+    ];
+
     /**
      * The attributes that are mass assignable.
      *
@@ -34,8 +46,8 @@ class Order extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function orderDetails(): HasMany
+    public function cartItems(): HasMany
     {
-        return $this->hasMany(OrderDetail::class);
+        return $this->hasMany(Cart::class, 'order_id');
     }
 }

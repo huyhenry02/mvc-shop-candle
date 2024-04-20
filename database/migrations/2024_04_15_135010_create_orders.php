@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('shipping_address', 255)->nullable();
             $table->string('shipping_phone', 255)->nullable();
             $table->string('shipping_note', 255)->nullable();
-            $table->enum('status', ['pending', 'shipping', 'completed'])->default('pending');
+            $table->enum('status', ['pending', 'approved', 'shipping', 'completed'])->default('pending');
             $table->integer('total');
             $table->timestamps();
 
