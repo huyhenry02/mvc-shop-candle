@@ -27,7 +27,7 @@
                     </a>
                 </li>
                 <li class="sidebar-item item-custom {{ Request::routeIs('admin.order.index') ? 'active' : '' }}">
-                    <a class="" href="" aria-expanded="false">
+                    <a class="" href="{{route('admin.order.index')}}" aria-expanded="false">
                 <span>
                   <i class="ti ti-cards"></i>
 

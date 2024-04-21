@@ -4,7 +4,7 @@
         "address": "123 Đường ABC, Quận XYZ, Thành phố HCM",
         "phone": "0123456789",
         "email": "admin@example.com",
-        "password": "Password@123",
+        "password": "123",
         "age": 30,
         "role": "admin"
     },
